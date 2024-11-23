@@ -1,10 +1,10 @@
-type registerErrorType={
+export type registerErrorType={
   name?:string;
   email?:string;
   password?:string;
 }
 
-type loginErrorType={
+export type loginErrorType={
   email?:string;
   password?:string;
 }

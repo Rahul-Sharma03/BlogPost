@@ -7,6 +7,7 @@ import { FaRegEye } from "react-icons/fa6"; //hide
 import { FaRegEyeSlash } from "react-icons/fa6"; //see
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
+import { loginErrorType } from "@/types";
 
 const Login = () => {
   const params = useSearchParams();
