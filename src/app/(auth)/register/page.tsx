@@ -7,6 +7,7 @@ import { FaRegEye } from "react-icons/fa6";//hide
 import { FaRegEyeSlash } from "react-icons/fa6";//see
 import axios from "axios"
 import { useRouter } from "next/navigation";
+import { registerErrorType } from "@/types";
 
 const Register = () => {
   const router=useRouter()
