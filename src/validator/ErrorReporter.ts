@@ -15,7 +15,7 @@ export default class ErrorReporter implements ErrorReporterContract {
    * A collection of errors. Feel free to give accurate types
    * to this property
    */
-  errors: any = {}
+  errors: Record<string, string> = {}
 
   /**
    * VineJS call the report method
@@ -24,7 +24,7 @@ export default class ErrorReporter implements ErrorReporterContract {
     message: string,
     rule: string,
     field: FieldContext,
-    meta?: any
+    // meta?: any
   ) {
     this.hasErrors = true
 
