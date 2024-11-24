@@ -2,7 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
+// import { RxHamburgerMenu } from "react-icons/rx";
+// import { GiHamburgerMenu } from "react-icons/gi";
 import { RxHamburgerMenu } from "react-icons/rx";
+
 import { ModeToggle } from "./theme-toggle";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
@@ -13,7 +16,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/sheet"
+
 
 const NavBar = async () => {
   const session = await getServerSession(authOptions);
@@ -61,7 +65,7 @@ const NavBar = async () => {
                 <SheetTitle className="text-3xl underline">MENU</SheetTitle>
                 <nav>
                   <ul className="flex flex-col p-2">
-                    <li>
+                    <li>  
                       <Link
                         href="/blog"
                         className="text-2xl font-light mt-[20px]"

@@ -3,7 +3,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { useSession } from "next-auth/react";
-
+import DebugNav from "@/components/Text";
 const Home = () => {
   const { data: session } = useSession();
   
@@ -36,6 +36,7 @@ const Home = () => {
           }}
         />
       </h1>
+      <DebugNav/>
     </div>
   );
 };
