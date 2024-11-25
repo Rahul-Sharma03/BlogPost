@@ -25,7 +25,7 @@ const NavBar = async () => {
       <nav className="flex h-16 bg-background/50 sticky top-0 border-b px-8 backdrop-blur items-center justify-between z-20">
         <Image src="/images/logo.png" height={45} width={45} alt="logo" />
 
-        <ul className="hidden md:flex w-full justify-end space-x-4 items-center">
+        <ul className=" flex w-full justify-end space-x-4 items-center">
           <li className="space-x-2">
             <Link
               href="/login"
