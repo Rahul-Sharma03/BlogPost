@@ -51,7 +51,7 @@ const NavBar = async () => {
         <Link href="/">
           <Image src="/images/logo.png" height={45} width={45} alt="logo" />
         </Link>
-
+        {/* for mobile */}
         <div className="flex items-center space-x-4 md:hidden">
         <DropMenu/>
         <ModeToggle />
@@ -89,6 +89,8 @@ const NavBar = async () => {
           </Sheet>
           
         </div>
+
+        {/* for destop */}
 
         <ul className="hidden md:flex w-full justify-end space-x-4 items-center">
           <li>
