@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 
-
 import { ModeToggle } from "./theme-toggle";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
@@ -59,8 +58,8 @@ const NavBar = async () => {
           {/* Hamburger Menu for Mobile View */}
           <Sheet>
             <SheetTrigger>
-              
-              <Menu />
+              {/* <RxHamburgerMenu className="text-2xl md:hidden flex " /> */}
+              <Menu className="text-2xl md:hidden flex " />
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
