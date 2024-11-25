@@ -29,7 +29,7 @@ const DropMenu = () => {
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
           <h1 className='text-center underline'>Developer Info</h1>
-          <Link href="/">
+          <Link href="https://github.com/Rahul-Sharma03/blogpost">
           <DropdownMenuRadioItem value="top" className='gap-[10px] cursor-pointer'>Github<FaGithub/></DropdownMenuRadioItem>
 
           </Link>
