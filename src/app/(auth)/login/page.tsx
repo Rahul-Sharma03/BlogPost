@@ -137,11 +137,11 @@ const Login = () => {
 
             {/* <span className="text-red-500 font-semibold">{errors?.password}</span> */}
 
-            <div className="flex justify-end">
+            {/* <div className="flex justify-end">
               <a href="#" className="text-sm text-blue-500 hover:underline">
                 Forgot password?
               </a>
-            </div>
+            </div> */}
 
             <button
               type="submit"

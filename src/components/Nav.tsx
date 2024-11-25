@@ -106,6 +106,8 @@ const NavBar = async () => {
               Create post
             </Link>
           </li>
+        <ModeToggle />
+
           <DropMenu />
         </ul>
       </nav>
