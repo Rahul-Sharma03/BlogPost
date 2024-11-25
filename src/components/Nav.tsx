@@ -2,9 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
-// import { RxHamburgerMenu } from "react-icons/rx";
-// import { GiHamburgerMenu } from "react-icons/gi";
-import { RxHamburgerMenu } from "react-icons/rx";
+
 
 import { ModeToggle } from "./theme-toggle";
 import { getServerSession } from "next-auth";
@@ -17,6 +15,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { Menu } from "lucide-react";
 
 
 const NavBar = async () => {
@@ -60,7 +59,8 @@ const NavBar = async () => {
           {/* Hamburger Menu for Mobile View */}
           <Sheet>
             <SheetTrigger>
-              <RxHamburgerMenu className="text-2xl md:hidden" />
+              
+              <Menu />
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
