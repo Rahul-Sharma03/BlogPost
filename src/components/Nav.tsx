@@ -55,6 +55,8 @@ const NavBar = async () => {
         </Link>
 
         <div className="flex items-center space-x-4 md:hidden">
+        <DropMenu/>
+        <ModeToggle />
           {/* Hamburger Menu for Mobile View */}
           <Sheet>
             <SheetTrigger>
@@ -81,16 +83,12 @@ const NavBar = async () => {
                         Create post
                       </Link>
                     </li>
-                    <li>
-                      <DropMenu />
-                    </li>
                   </ul>
                 </nav>
               </SheetHeader>
             </SheetContent>
           </Sheet>
-
-          <ModeToggle />
+          
         </div>
 
         <ul className="hidden md:flex w-full justify-end space-x-4 items-center">
