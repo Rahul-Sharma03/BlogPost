@@ -57,9 +57,9 @@ const NavBar = async () => {
         <ModeToggle />
           {/* Hamburger Menu for Mobile View */}
           <Sheet>
-            <SheetTrigger>
+            <SheetTrigger className="z-50 flex items-center">
               {/* <RxHamburgerMenu className="text-2xl md:hidden flex " /> */}
-              <Menu className="text-2xl md:hidden flex " />
+              <Menu className="text-2xl md:hidden flex  text-current" />
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
